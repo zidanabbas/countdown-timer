@@ -43,8 +43,8 @@ export default function Home() {
     let width = window.innerWidth * scale;
     let height = window.innerHeight * scale;
 
-    canvas.width = width;
-    canvas.height = height;
+    canvas!.width = width;
+    canvas!.height = height;
 
     const stars: Star[] = [];
     let pointerX: number | null = null;
@@ -70,8 +70,8 @@ export default function Home() {
       scale = window.devicePixelRatio || 1;
       width = window.innerWidth * scale;
       height = window.innerHeight * scale;
-      canvas.width = width;
-      canvas.height = height;
+      canvas!.width = width;
+      canvas!.height = height;
     }
 
     function update() {
