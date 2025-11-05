@@ -5,14 +5,15 @@ interface TimerDisplayProps {
 }
 
 export default function TimerDisplay({ time }: TimerDisplayProps) {
-  const { h, m, s } = time;
+  const { d, h, m, s } = time;
   const blocks = [
+    { label: "DAYS", value: d },
     { label: "HOURS", value: h },
     { label: "MINUTES", value: m },
     { label: "SECONDS", value: s },
   ];
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-4 gap-6">
       {blocks.map((b) => (
         <div
           key={b.label}

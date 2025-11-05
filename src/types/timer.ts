@@ -1,5 +1,6 @@
 // types/timer.ts
 export interface TimeFormat {
+  d: number;
   h: number;
   m: number;
   s: number;
