@@ -13,7 +13,7 @@ export default function Home() {
   const [timeLeft, setTimeLeft] = useState<number>(2 * 60 * 60);
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [isFinished, setIsFinished] = useState<boolean>(false);
-  const [audio] = useState<HTMLAudioElement>(() => new Audio("/terompet.mp3"));
+  const [audio] = useState<HTMLAudioElement>(() => new Audio("/wfl.mp3"));
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   // fungsi hitung total detik dari input user
